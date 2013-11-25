@@ -19,4 +19,26 @@
    (set-selection-coding-system 'utf-8))
   (prefer-coding-system 'utf-8))
 
+;;配置semantic
+(setq semantic-default-submodes '(global-semantic-idle-scheduler-mode
+                                  global-semanticdb-minor-mode
+                                  global-semantic-idle-summary-mode
+                                  global-semantic-mru-bookmark-mode
+                                  ;;global-semantic-idle-completions-mode
+                                  ))
+(semantic-mode 1)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;                个人爱好                                     ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;个人信息
+(setq user-full-name "Zhiyong Ma")
+(setq user-mail-address "ccdevote@gmail.com")
+;;光标靠近鼠标时鼠标移开
+(mouse-avoidance-mode 'animate)
+;;标题栏显示文件名 （有待验证）
+(setq frame-title-format "emacs@%b")
+;;emacs 可以直接打开图片
+(auto-image-file-mode)
+
 (provide 'init-locales)

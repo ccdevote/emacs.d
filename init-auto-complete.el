@@ -34,9 +34,13 @@
 (set-default 'ac-sources
              '(ac-source-imenu
                ac-source-dictionary
+               ac-source-yasnippet
+               ac-source-semantic
                ac-source-words-in-buffer
-               ac-source-words-in-same-mode-buffers
-               ac-source-words-in-all-buffer))
+               ac-source-gtags
+               ;;ac-source-words-in-same-mode-buffers
+               ;;ac-source-words-in-all-buffer
+               ))
 
 (dolist (mode '(magit-log-edit-mode
                 log-edit-mode org-mode text-mode haml-mode
@@ -49,6 +53,23 @@
                 inferior-emacs-lisp-mode))
   (add-to-list 'ac-modes mode))
 
+;;my favourite auto-complete config
+(define-key ac-complete-mode-map "\t" 'ac-expand)
+(define-key ac-complete-mode-map "\r" 'ac-complete)  
+(define-key ac-complete-mode-map "\C-n" 'ac-next)
+(define-key ac-complete-mode-map "\C-p" 'ac-previous)  
+(setq ac-auto-start 1)  
+(setq ac-dwim t)  
+(setq ac-override-local-map nil)        ;don't override local map  
+(add-hook 'c-mode-common-hook
+          '(lambda()
+             (add-to-list 'ac-omni-completion-sources
+                          (cons "\\." '(ac-source-semantic)))
+             (add-to-list 'ac-omni-completion-sources
+                          (cons "->" '(ac-source-semantic)))
+             (c-set-style "java")
+             ))  
+(setq ac-menu-height 20)
 
 ;; Exclude very large buffers from dabbrev
 (defun sanityinc/dabbrev-friend-buffer (other-buffer)
