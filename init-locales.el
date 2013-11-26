@@ -19,7 +19,7 @@
    (set-selection-coding-system 'utf-8))
   (prefer-coding-system 'utf-8))
 
-;;配置semantic
+;; config semantic
 (setq semantic-default-submodes '(global-semantic-idle-scheduler-mode
                                   global-semanticdb-minor-mode
                                   global-semantic-idle-summary-mode
@@ -28,17 +28,15 @@
                                   ))
 (semantic-mode 1)
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;                个人爱好                                     ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;个人信息
+;; my favourite configuration;;
+;; personal info
 (setq user-full-name "Zhiyong Ma")
 (setq user-mail-address "ccdevote@gmail.com")
-;;光标靠近鼠标时鼠标移开
+;; move the mouse when mouse on
 (mouse-avoidance-mode 'animate)
-;;标题栏显示文件名 （有待验证）
+;; show file name on the title bar
 (setq frame-title-format "emacs@%b")
-;;emacs 可以直接打开图片
+;; emacs can open the image directly
 (auto-image-file-mode)
 
 (provide 'init-locales)
