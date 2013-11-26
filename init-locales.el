@@ -19,24 +19,4 @@
    (set-selection-coding-system 'utf-8))
   (prefer-coding-system 'utf-8))
 
-;; config semantic
-(setq semantic-default-submodes '(global-semantic-idle-scheduler-mode
-                                  global-semanticdb-minor-mode
-                                  global-semantic-idle-summary-mode
-                                  global-semantic-mru-bookmark-mode
-                                  ;;global-semantic-idle-completions-mode
-                                  ))
-(semantic-mode 1)
-
-;; my favourite configuration;;
-;; personal info
-(setq user-full-name "Zhiyong Ma")
-(setq user-mail-address "ccdevote@gmail.com")
-;; move the mouse when mouse on
-(mouse-avoidance-mode 'animate)
-;; show file name on the title bar
-(setq frame-title-format "emacs@%b")
-;; emacs can open the image directly
-(auto-image-file-mode)
-
 (provide 'init-locales)
