@@ -81,12 +81,14 @@
 
 (require 'init-marmalade)
 (require 'init-misc)
-
+;; my config
 (require 'init-yasnippet)
 (require 'init-ecb)
 (require 'init-semantic)
 (require 'init-info)
 (require 'init-favourite)
+(require 'init-wb-line-number)
+(require 'init-jde)
 ;; Extra packages which don't require any configuration
 (require-package 'gnuplot)
 (require-package 'lua-mode)

@@ -68,6 +68,7 @@
              (add-to-list 'ac-omni-completion-sources
                           (cons "->" '(ac-source-semantic)))
              (c-set-style "java")
+             (c-toggle-auto-hungry-state)
              ))  
 (setq ac-menu-height 20)
 
