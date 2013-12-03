@@ -89,6 +89,7 @@
 (require 'init-favourite)
 (require 'init-wb-line-number)
 (require 'init-jde)
+(require 'init-w3)
 ;; Extra packages which don't require any configuration
 (require-package 'gnuplot)
 (require-package 'lua-mode)
