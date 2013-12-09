@@ -1,0 +1,447 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.13 (TeX Live 2013/dev) (format=latex 2013.8.13)  9 DEC 2013 10:45
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**ÂëµÂëµ
+(/home/mzy/iie/git.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
+aded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+
+! LaTeX Error: File `CJK.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+! Interruption.
+<to be read again> 
+                   }
+l.4 \begin
+          {CJK}^^M
+? 
+
+! LaTeX Error: Environment CJK undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \begin{CJK}
+               
+? 
+No file git.aux.
+\openout1 = `git.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 8.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 8.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 8.
+Missing character: There is no Ê in font cmr10!
+Missing character: There is no å in font cmr10!
+Missing character: There is no á in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no Æ in font cmr10!
+Missing character: There is no ö in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no ´ in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ê in font cmr10!
+Missing character: There is no ç in font cmr10!
+Missing character: There is no ‰ in font cmr10!
+Missing character: There is no ø in font cmr10!
+Missing character: There is no Æ in font cmr10!
+Missing character: There is no Ê in font cmr10!
+Missing character: There is no î in font cmr10!
+Missing character: There is no π in font cmr10!
+Missing character: There is no È in font cmr10!
+Missing character: There is no Ö in font cmr10!
+Missing character: There is no ç in font cmr10!
+Missing character: There is no Á in font cmr10!
+Missing character: There is no Ω in font cmr10!
+Missing character: There is no Æ in font cmr10!
+Missing character: There is no Ê in font cmr10!
+Missing character: There is no ñ in font cmr10!
+Missing character: There is no á in font cmr10!
+Missing character: There is no ‰ in font cmr10!
+Missing character: There is no ª in font cmr10!
+Missing character: There is no ∂ in font cmr10!
+Missing character: There is no Ê in font cmr10!
+Missing character: There is no ò in font cmr10!
+Missing character: There is no æ in font cmr10!
+Missing character: There is no Á in font cmr10!
+Missing character: There is no § in font cmr10!
+Missing character: There is no ∫ in font cmr10!
+Missing character: There is no Á in font cmr10!
+Missing character: There is no ≤ in font cmr10!
+Missing character: There is no æ in font cmr10!
+Missing character: There is no Á in font cmr10!
+Missing character: There is no Æ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no Á in font cmr10!
+Missing character: There is no ö in font cmr10!
+Missing character: There is no Ñ in font cmr10!
+Missing character: There is no Á in font cmr10!
+Missing character: There is no ä in font cmr10!
+Missing character: There is no ∂ in font cmr10!
+Missing character: There is no Ê in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no Ë in font cmr10!
+Missing character: There is no æ in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no á in font cmr10!
+Missing character: There is no ∫ in font cmr10!
+Missing character: There is no Ê in font cmr10!
+Missing character: There is no ü in font cmr10!
+Missing character: There is no • in font cmr10!
+Missing character: There is no Á in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ã in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no í in font cmr10!
+Missing character: There is no å in font cmr10!
+Missing character: There is no Á in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no Ê in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ∫ in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‰ in font cmr10!
+Missing character: There is no ∏ in font cmr10!
+Missing character: There is no ≠ in font cmr10!
+Missing character: There is no Á in font cmr10!
+Missing character: There is no ö in font cmr10!
+Missing character: There is no Ñ in font cmr10!
+Missing character: There is no Ê in font cmr10!
+Missing character: There is no ñ in font cmr10!
+Missing character: There is no á in font cmr10!
+Missing character: There is no ‰ in font cmr10!
+Missing character: There is no ª in font cmr10!
+Missing character: There is no ∂ in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ∑ in font cmr10!
+Missing character: There is no Æ in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no º in font cmr10!
+Missing character: There is no Ç in font cmr10!
+Missing character: There is no Ê in font cmr10!
+Missing character: There is no ö in font cmr10!
+Missing character: There is no Ç in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ≠ in font cmr10!
+Missing character: There is no ò in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no å in font cmr10!
+Missing character: There is no ∫ in font cmr10!
+Missing character: There is no Á in font cmr10!
+Missing character: There is no ö in font cmr10!
+Missing character: There is no Ñ in font cmr10!
+Missing character: There is no Á in font cmr10!
+Missing character: There is no õ in font cmr10!
+Missing character: There is no Æ in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no Ω in font cmr10!
+Missing character: There is no ï in font cmr10!
+Missing character: There is no Ê in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no ë in font cmr10!
+Missing character: There is no ‰ in font cmr10!
+Missing character: There is no º in font cmr10!
+Missing character: There is no ö in font cmr10!
+Missing character: There is no Ë in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+Missing character: There is no ´ in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no Ü in font cmr10!
+Missing character: There is no Ê in font cmr10!
+Missing character: There is no î in font cmr10!
+Missing character: There is no Ø in font cmr10!
+Missing character: There is no Á in font cmr10!
+Missing character: There is no õ in font cmr10!
+Missing character: There is no Æ in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no Ω in font cmr10!
+Missing character: There is no ï in font cmr10!
+Missing character: There is no Ê in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no ë in font cmr10!
+Missing character: There is no Ê in font cmr10!
+Missing character: There is no õ in font cmr10!
+Missing character: There is no ø in font cmr10!
+Missing character: There is no Ê in font cmr10!
+Missing character: There is no ç in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no È in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no § in font cmr10!
+Missing character: There is no Ê in font cmr10!
+Missing character: There is no ö in font cmr10!
+Missing character: There is no Ç in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ≠ in font cmr10!
+Missing character: There is no ò in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no å in font cmr10!
+Missing character: There is no ∫ in font cmr10!
+Missing character: There is no Á in font cmr10!
+Missing character: There is no ö in font cmr10!
+Missing character: There is no Ñ in font cmr10!
+Missing character: There is no Ê in font cmr10!
+Missing character: There is no ñ in font cmr10!
+Missing character: There is no á in font cmr10!
+Missing character: There is no ‰ in font cmr10!
+Missing character: There is no ª in font cmr10!
+Missing character: There is no ∂ in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ∑ in font cmr10!
+Missing character: There is no • in font cmr10!
+Missing character: There is no ‰ in font cmr10!
+Missing character: There is no Ω in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no å in font cmr10!
+Missing character: There is no ∫ in font cmr10!
+Missing character: There is no ‰ in font cmr10!
+Missing character: There is no ∏ in font cmr10!
+Missing character: There is no ç in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no è in font cmr10!
+Missing character: There is no ò in font cmr10!
+Missing character: There is no ‰ in font cmr10!
+Missing character: There is no ∏ in font cmr10!
+Missing character: There is no ≠ in font cmr10!
+Missing character: There is no Ê in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ∑ in font cmr10!
+Missing character: There is no • in font cmr10!
+Missing character: There is no ‰ in font cmr10!
+Missing character: There is no Ω in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no å in font cmr10!
+Missing character: There is no ∫ in font cmr10!
+Missing character: There is no Ê in font cmr10!
+Missing character: There is no ö in font cmr10!
+Missing character: There is no Ç in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ≠ in font cmr10!
+Missing character: There is no ò in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no å in font cmr10!
+Missing character: There is no ∫ in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no í in font cmr10!
+Missing character: There is no å in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no å in font cmr10!
+Missing character: There is no ∫ in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ü in font cmr10!
+Missing character: There is no ü in font cmr10!
+Missing character: There is no ‰ in font cmr10!
+Missing character: There is no ∏ in font cmr10!
+Missing character: There is no ç in font cmr10!
+Missing character: There is no Ë in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no ‰ in font cmr10!
+Missing character: There is no Ω in font cmr10!
+Missing character: There is no ø in font cmr10!
+Missing character: There is no Á in font cmr10!
+Missing character: There is no î in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ë in font cmr10!
+Missing character: There is no Ω in font cmr10!
+Missing character: There is no ‰ in font cmr10!
+Missing character: There is no ª in font cmr10!
+Missing character: There is no § in font cmr10!
+Missing character: There is no Ë in font cmr10!
+Missing character: There is no ø in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no Ê in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no ∑ in font cmr10!
+Missing character: There is no Ê in font cmr10!
+Missing character: There is no è in font cmr10!
+Missing character: There is no ê in font cmr10!
+Missing character: There is no ‰ in font cmr10!
+Missing character: There is no ∫ in font cmr10!
+Missing character: There is no § in font cmr10!
+Missing character: There is no ‰ in font cmr10!
+Missing character: There is no º in font cmr10!
+Missing character: There is no ö in font cmr10!
+Missing character: There is no ‰ in font cmr10!
+Missing character: There is no Ω in font cmr10!
+Missing character: There is no ø in font cmr10!
+Missing character: There is no Ê in font cmr10!
+Missing character: There is no ö in font cmr10!
+Missing character: There is no Ç in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ≠ in font cmr10!
+Missing character: There is no ò in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no å in font cmr10!
+Missing character: There is no ∫ in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no § in font cmr10!
+Missing character: There is no ± in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no é in font cmr10!
+Missing character: There is no ª in font cmr10!
+Missing character: There is no Ê in font cmr10!
+Missing character: There is no Ñ in font cmr10!
+Missing character: There is no è in font cmr10!
+Missing character: There is no ‰ in font cmr10!
+Missing character: There is no π in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no º in font cmr10!
+Missing character: There is no å in font cmr10!
+Missing character: There is no ‰ in font cmr10!
+Missing character: There is no ∏ in font cmr10!
+Missing character: There is no ß in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no § in font cmr10!
+Missing character: There is no ± in font cmr10!
+Missing character: There is no Á in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no Ê in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Ê in font cmr10!
+Missing character: There is no é in font cmr10!
+Missing character: There is no ß in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no ∂ in font cmr10!
+Missing character: There is no Ë in font cmr10!
+Missing character: There is no É in font cmr10!
+Missing character: There is no Ω in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ä in font cmr10!
+Missing character: There is no õ in font cmr10!
+Missing character: There is no È in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ê in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no ∂ in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no º in font cmr10!
+Missing character: There is no ï in font cmr10!
+Missing character: There is no Á in font cmr10!
+Missing character: There is no î in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no Ø in font cmr10!
+Missing character: There is no π in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ∫ in font cmr10!
+Missing character: There is no î in font cmr10!
+Missing character: There is no Á in font cmr10!
+Missing character: There is no ö in font cmr10!
+Missing character: There is no Ñ in font cmr10!
+Missing character: There is no Ê in font cmr10!
+Missing character: There is no è in font cmr10!
+Missing character: There is no ê in font cmr10!
+Missing character: There is no ‰ in font cmr10!
+Missing character: There is no ∫ in font cmr10!
+Missing character: There is no § in font cmr10!
+Missing character: There is no Á in font cmr10!
+Missing character: There is no ª in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ê in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no Ê in font cmr10!
+Missing character: There is no ò in font cmr10!
+Missing character: There is no æ in font cmr10!
+Missing character: There is no Á in font cmr10!
+Missing character: There is no § in font cmr10!
+Missing character: There is no ∫ in font cmr10!
+Missing character: There is no Ê in font cmr10!
+Missing character: There is no è in font cmr10!
+Missing character: There is no ê in font cmr10!
+Missing character: There is no ‰ in font cmr10!
+Missing character: There is no ∫ in font cmr10!
+Missing character: There is no § in font cmr10!
+Missing character: There is no ‰ in font cmr10!
+Missing character: There is no ø in font cmr10!
+Missing character: There is no ° in font cmr10!
+Missing character: There is no Ê in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no Ø in font cmr10!
+
+! LaTeX Error: \begin{document} ended by \end{CJK}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \end{CJK}
+              
+? 
+! Emergency stop.
+ ...                                              
+                                                  
+l.29 \end{CJK}
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+ 
+Here is how much of TeX's memory you used:
+ 229 strings out of 495064
+ 2562 string characters out of 3182217
+ 47072 words of memory out of 3000000
+ 3489 multiletter control sequences out of 15000+200000
+ 6975 words of font info for 25 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 21i,6n,19p,149b,248s stack positions out of 5000i,500n,10000p,200000b,50000s
+No pages of output.

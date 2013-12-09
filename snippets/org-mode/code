@@ -1,0 +1,6 @@
+# name: #BEGIN_SRC pyton .... #END_SRC
+# key: code
+# --
+#+BEGIN_SRC python
+$0
+#+END_SRC

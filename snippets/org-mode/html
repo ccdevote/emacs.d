@@ -1,0 +1,6 @@
+# name: html
+# key: html
+# --
+#+BEGIN_HTML
+$0
+#+END_HTML

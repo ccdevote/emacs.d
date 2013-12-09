@@ -1,0 +1,6 @@
+# name: example
+# key: exam
+# --
+#+BEGIN_EXAMPLE
+$0
+#+END_EXAMPLE

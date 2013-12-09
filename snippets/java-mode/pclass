@@ -1,0 +1,7 @@
+# name: public class Xxx { ... }
+# key: pclass
+# --
+public class $0 {
+
+       $1
+}

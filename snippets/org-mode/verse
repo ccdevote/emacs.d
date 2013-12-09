@@ -1,0 +1,6 @@
+# name: verse 分行区块
+# key:  verse
+# --
+#+BEGIN_VERSE
+$0
+#+END_VERSE

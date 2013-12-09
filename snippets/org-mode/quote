@@ -1,0 +1,6 @@
+# name: quote 缩进区块，通常用于引用，与默认格式相比左右都会留出缩进
+# key : quote
+# --
+#+BEGIN_QUOTE
+$0
+#+END_QUOTE

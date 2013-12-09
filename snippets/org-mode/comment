@@ -1,0 +1,6 @@
+# name: comment 注释
+# key: commment
+# --
+#+BEGIN_COMMENT
+$0
+#+END_COMMENT

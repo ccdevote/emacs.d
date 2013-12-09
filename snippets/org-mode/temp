@@ -1,0 +1,10 @@
+# name: org template
+# key: temp
+# --
+#+TITLE:       $0
+#+AUTHOR:      Anterior
+#+EMAIL:       ccdevote@gmail.com
+#+DESCRIPTION: $1
+#+KEYWORDS:    $2
+#+LANGUAGE:    zh_CN
+#+OPTIONS:     $3

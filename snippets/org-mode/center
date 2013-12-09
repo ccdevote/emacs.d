@@ -1,0 +1,6 @@
+# name: center 居中区块
+# key : center
+# --
+#+BEGIN_CENTER
+$0
+#+END_CENTER

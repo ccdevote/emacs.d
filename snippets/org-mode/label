@@ -1,0 +1,5 @@
+# name: label
+# key: label
+# --
+#+CAPTION: $0
+#+LABEL: $1
