@@ -27,4 +27,4 @@ site-lisp/package/
 /.achievements
 /.bookmarks.el
 \#*
-semantic/*
+semanticdb/*
