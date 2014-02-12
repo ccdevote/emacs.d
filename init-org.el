@@ -1,5 +1,6 @@
 (when (< emacs-major-version 24)
-  (require-package 'org))
+  (require-package 'org)
+  (require-package 'org-jekyll))
 (require-package 'org-fstree)
 (when *is-a-mac*
   (require-package 'org-mac-link)
@@ -8,6 +9,31 @@
 
 (define-key global-map (kbd "C-c l") 'org-store-link)
 (define-key global-map (kbd "C-c a") 'org-agenda)
+(define-key global-map (kbd "C-c c") 'org-capture)
+(define-key global-map (kbd "C-c b") 'org-iswitchb)
+(setq org-jekyll/jekyll-project-root "/home/soft/document/blog/")
+(setq org-jekyll/org-mode-project-root "/home/soft/document/blog/org")
+(setq org-publish-project-alist
+      '(
+        ("mblog-org"
+         :base-directory "/home/soft/document/blog/org"
+         :base-extension "org"
+         :publishing-directory "/home/soft/document/blog"
+         :recursive t
+         :publishing-function org-publish-org-to-html
+         :headline-levels 4
+         :html-extension "html"
+         :body-only t
+         )
+        ("mblog-static"
+         :base-directory "/home/soft/document/blog/org/resources"
+         :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf\\|php"
+         :publishing-directory "/home/soft/document/blog/resources"
+         :recursive t
+         :publishing-function org-publish-attachment
+         )
+        ("mblog":components("mblog-org" "mblog-static"))
+        ))
 
 ;; Various preferences
 (setq org-log-done t
@@ -88,6 +114,7 @@
 ;;                 (insert (match-string 0))))))
 
 
+
 (after-load 'org
   (define-key org-mode-map (kbd "C-M-<up>") 'org-up-element)
   (when *is-a-mac*
@@ -96,5 +123,14 @@
   (when *is-a-mac*
     (autoload 'omlg-grab-link "org-mac-link")
     (define-key org-mode-map (kbd "C-c g") 'omlg-grab-link)))
+;;(setq org-jekyll/jekyll-project-root "/home/soft/document/blog")
+;;(setq org-jekyll/org-mode-project-root "/home/soft/document/blog/org")
+;;(setq org-publish-project-alist '(
+;;                                   "blog"
+;;                                     :body t
+;;                                     :base-directory "/hoem/soft/document/blog/org"
+;;                                     :publish-directory "/home/soft/document/blog/_posts")
+;; )
+
 
 (provide 'init-org)
