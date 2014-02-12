@@ -1,0 +1,17 @@
+;; Object org/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "org/"
+  :tables (list 
+   (semanticdb-table "2014-02-12-博客搭建小记.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("简介" section nil nil [50 212]))          
+    :file "2014-02-12-博客搭建小记.html"
+    :pointmax 212
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!soft!document!blog!org!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

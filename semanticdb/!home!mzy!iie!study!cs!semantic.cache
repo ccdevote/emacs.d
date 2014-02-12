@@ -1,0 +1,58 @@
+;; Object cs/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cs/"
+  :tables (list 
+   (semanticdb-table "fork.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("unistd.h" include (:system-flag t) nil [40 59])
+            ("string.h" include (:system-flag t) nil [60 79])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [89 98])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [99 112]))                  
+                :type "int")
+                nil [80 237]))          
+    :file "fork.c"
+    :pointmax 238
+    :fsize 237
+    :lastmodtime '(21185 30895)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "fork2.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("unistd.h" include (:system-flag t) nil [20 39])
+            ("N" variable (:constant-flag t) nil [48 49])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [61 70])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [71 84]))                  
+                :type "int")
+                nil [52 272]))          
+    :file "fork2.c"
+    :pointmax 271
+    :fsize 272
+    :lastmodtime '(21185 12080)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("N" . ((number "2" 50 . 51)))
+          )
+
+    )
+   )
+  :file "!home!mzy!iie!study!cs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

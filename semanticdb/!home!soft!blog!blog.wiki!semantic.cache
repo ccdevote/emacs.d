@@ -1,0 +1,18 @@
+;; Object blog.wiki/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "blog.wiki/"
+  :tables (list 
+   (semanticdb-table "Home.html"
+    :major-mode 'html-mode
+    :tags nil
+    :file "Home.html"
+    :pointmax 1
+    :fsize 3372
+    :lastmodtime '(21188 60540)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!soft!blog!blog.wiki!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

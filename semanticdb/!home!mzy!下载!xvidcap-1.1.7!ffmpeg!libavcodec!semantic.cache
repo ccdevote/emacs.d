@@ -1,0 +1,509 @@
+;; Object libavcodec/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libavcodec/"
+  :tables (list 
+   (semanticdb-table "lzw.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("FFMPEG_LZW_H" variable (:constant-flag t) nil [1028 1040])
+            ("bitstream.h" include nil nil [1042 1064])
+            ("FF_LZW_MODES" type
+               (:members 
+                  ( ("FF_LZW_GIF" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1089 1100])
+                    ("FF_LZW_TIFF" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1105 1118]))                  
+                :type "enum")
+                nil [1066 1119])
+            ("LZWState" type
+               (:typedef ("void")
+                :superclasses "void"
+                :type "typedef")
+                nil [1168 1190])
+            ("ff_lzw_decode_open" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 2
+                        :type ("LZWState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1274 1287]))                  
+                :type "void")
+                nil [1250 1288])
+            ("ff_lzw_decode_close" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 2
+                        :type ("LZWState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1314 1327]))                  
+                :type "void")
+                nil [1289 1328])
+            ("ff_lzw_decode_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("LZWState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1352 1364])
+                    ("csize" variable (:type "int") (reparse-symbol arg-sub-list) [1365 1375])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1376 1395])
+                    ("buf_size" variable (:type "int") (reparse-symbol arg-sub-list) [1396 1409])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [1410 1419]))                  
+                :type "int")
+                nil [1329 1420])
+            ("ff_lzw_decode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("LZWState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1439 1451])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1452 1465])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [1466 1474]))                  
+                :type "int")
+                nil [1421 1475])
+            ("ff_lzw_cur_ptr" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("lzw" variable
+                       (:pointer 1
+                        :type ("LZWState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1506 1520]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1476 1521])
+            ("ff_lzw_decode_tail" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("lzw" variable
+                       (:pointer 1
+                        :type ("LZWState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1546 1560]))                  
+                :type "void")
+                nil [1522 1561])
+            ("LZWEncodeState" type
+               (:prototype t
+                :type "struct")
+                nil [1587 1609])
+            ("ff_lzw_encode_state_size" variable
+               (:typemodifiers ("extern")
+                :constant-flag t
+                :type "int")
+                nil [1610 1652])
+            ("ff_lzw_encode_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("LZWEncodeState" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1678 1704])
+                    ("outbuf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1705 1722])
+                    ("outsize" variable (:type "int") (reparse-symbol arg-sub-list) [1723 1735])
+                    ("maxbits" variable (:type "int") (reparse-symbol arg-sub-list) [1736 1748]))                  
+                :type "void")
+                nil [1654 1749])
+            ("ff_lzw_encode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("LZWEncodeState" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1768 1794])
+                    ("inbuf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1795 1817])
+                    ("insize" variable (:type "int") (reparse-symbol arg-sub-list) [1818 1829]))                  
+                :type "int")
+                nil [1750 1830])
+            ("ff_lzw_encode_flush" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("LZWEncodeState" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1855 1881]))                  
+                :type "int")
+                nil [1831 1882]))          
+    :file "lzw.h"
+    :pointmax 1910
+    :fsize 1909
+    :lastmodtime '(18459 12711)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("FFMPEG_LZW_H")
+          )
+
+    )
+   (semanticdb-table "lzw.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("avcodec.h" include nil nil [999 1019])
+            ("lzw.h" include nil nil [1020 1036])
+            ("LZW_MAXBITS" variable (:constant-flag t) nil [1046 1057])
+            ("LZW_SIZTABLE" variable (:constant-flag t) nil [1085 1097])
+            ("mask" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [1131 1319])
+            ("LZWState" type
+               (:members 
+                  ( ("ebuf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1343 1370])
+                    ("pbuf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1343 1370])
+                    ("bbits" variable (:type "int") (reparse-symbol classsubparts) [1375 1385])
+                    ("bbuf" variable (:type "unsigned int") (reparse-symbol classsubparts) [1390 1408])
+                    ("mode" variable (:type "int") (reparse-symbol classsubparts) [1414 1423])
+                    ("cursize" variable (:type "int") (reparse-symbol classsubparts) [1464 1476])
+                    ("curmask" variable (:type "int") (reparse-symbol classsubparts) [1523 1535])
+                    ("codesize" variable (:type "int") (reparse-symbol classsubparts) [1540 1553])
+                    ("clear_code" variable (:type "int") (reparse-symbol classsubparts) [1558 1573])
+                    ("end_code" variable (:type "int") (reparse-symbol classsubparts) [1578 1591])
+                    ("newcodes" variable (:type "int") (reparse-symbol classsubparts) [1596 1609])
+                    ("top_slot" variable (:type "int") (reparse-symbol classsubparts) [1654 1667])
+                    ("extra_slot" variable (:type "int") (reparse-symbol classsubparts) [1721 1736])
+                    ("slot" variable (:type "int") (reparse-symbol classsubparts) [1741 1750])
+                    ("oc" variable (:type "int") (reparse-symbol classsubparts) [1793 1804])
+                    ("fc" variable (:type "int") (reparse-symbol classsubparts) [1793 1804])
+                    ("sp" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1809 1821])
+                    ("stack" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1826 1854])
+                    ("suffix" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1859 1888])
+                    ("prefix" variable
+                       (:dereference 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1893 1923])
+                    ("bs" variable (:type "int") (reparse-symbol classsubparts) [1928 1935]))                  
+                :type "struct")
+                nil [1321 1991])
+            ("lzw_get_code" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("LZWState" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2048 2068]))                  
+                :type "int")
+                nil [2024 2652])
+            ("ff_lzw_cur_ptr" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("LZWState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2684 2696]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [2654 2740])
+            ("ff_lzw_decode_tail" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("LZWState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2766 2778]))                  
+                :type "void")
+                nil [2742 3015])
+            ("ff_lzw_decode_open" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 2
+                        :type ("LZWState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3049 3062]))                  
+                :type "void")
+                nil [3025 3112])
+            ("ff_lzw_decode_close" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 2
+                        :type ("LZWState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3147 3160]))                  
+                :type "void")
+                nil [3122 3181])
+            ("ff_lzw_decode_init" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("LZWState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3423 3435])
+                    ("csize" variable (:type "int") (reparse-symbol arg-sub-list) [3436 3446])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3447 3466])
+                    ("buf_size" variable (:type "int") (reparse-symbol arg-sub-list) [3467 3480])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [3481 3490]))                  
+                :type "int")
+                nil [3400 4122])
+            ("ff_lzw_decode" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("LZWState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4419 4431])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4432 4445])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [4446 4454]))                  
+                :type "int")
+                nil [4401 6011]))          
+    :file "lzw.c"
+    :pointmax 6012
+    :fsize 6011
+    :lastmodtime '(18459 12711)
+    :unmatched-syntax '((symbol 3114 . 3121) (symbol 3017 . 3024))
+    :lexical-table 
+        '(("LZW_MAXBITS" . ((number "12" 1074 . 1076)))
+          ("LZW_SIZTABLE" . ((semantic-list "(1<<LZW_MAXBITS)" 1113 . 1129)))
+          )
+
+    )
+   (semanticdb-table "avcodec.h"
+    :file "avcodec.h"
+    :fsize 95621
+    :lastmodtime '(18459 12712)
+    )
+   (semanticdb-table "bitstream.h"
+    :file "bitstream.h"
+    :fsize 26531
+    :lastmodtime '(18459 12712)
+    )
+   (semanticdb-table "lzwenc.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("avcodec.h" include nil nil [898 918])
+            ("bitstream.h" include nil nil [919 941])
+            ("lzw.h" include nil nil [942 958])
+            ("LZW_MAXBITS" variable (:constant-flag t) nil [968 979])
+            ("LZW_SIZTABLE" variable (:constant-flag t) nil [991 1003])
+            ("LZW_HASH_SIZE" variable (:constant-flag t) nil [1047 1060])
+            ("LZW_HASH_SIZE" variable (:constant-flag t) nil [1047 1060])
+            ("LZW_HASH_SIZE" variable (:constant-flag t) nil [1047 1060])
+            ("LZW_HASH_SIZE" variable (:constant-flag t) nil [1047 1060])
+            ("LZW_HASH_SIZE" variable (:constant-flag t) nil [1047 1060])
+            ("LZW_HASH_SIZE" variable (:constant-flag t) nil [1047 1060])
+            ("LZW_HASH_SHIFT" variable (:constant-flag t) nil [1103 1117])
+            ("LZW_HASH_SHIFT" variable (:constant-flag t) nil [1103 1117])
+            ("LZW_HASH_SHIFT" variable (:constant-flag t) nil [1103 1117])
+            ("LZW_PREFIX_EMPTY" variable (:constant-flag t) nil [1161 1177])
+            ("LZW_PREFIX_EMPTY" variable (:constant-flag t) nil [1161 1177])
+            ("LZW_PREFIX_EMPTY" variable (:constant-flag t) nil [1161 1177])
+            ("LZW_PREFIX_EMPTY" variable (:constant-flag t) nil [1161 1177])
+            ("LZW_PREFIX_FREE" variable (:constant-flag t) nil [1189 1204])
+            ("Code" type
+               (:typedef ("Code" type (:type "struct") nil nil)
+                :superclasses "Code"
+                :type "typedef")
+                nil [1239 1484])
+            ("Code" type
+               (:members 
+                  ( ("hash_prefix" variable (:type "int") (reparse-symbol classsubparts) [1357 1373])
+                    ("code" variable (:type "int") (reparse-symbol classsubparts) [1378 1387])
+                    ("suffix" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1420 1435]))                  
+                :type "struct")
+                nil [1239 1484])
+            ("LZWEncodeState" type
+               (:typedef ("LZWEncodeState" type (:type "struct") nil nil)
+                :superclasses "LZWEncodeState"
+                :type "typedef")
+                nil [1510 2180])
+            ("LZWEncodeState" type
+               (:members 
+                  ( ("clear_code" variable (:type "int") (reparse-symbol classsubparts) [1546 1561])
+                    ("end_code" variable (:type "int") (reparse-symbol classsubparts) [1600 1613])
+                    ("tab" variable
+                       (:dereference 1
+                        :type ("Code" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1652 1676])
+                    ("tabsize" variable (:type "int") (reparse-symbol classsubparts) [1697 1709])
+                    ("bits" variable (:type "int") (reparse-symbol classsubparts) [1762 1771])
+                    ("bufsize" variable (:type "int") (reparse-symbol classsubparts) [1813 1825])
+                    ("pb" variable (:type ("PutBitContext" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1869 1886])
+                    ("maxbits" variable (:type "int") (reparse-symbol classsubparts) [1930 1942])
+                    ("maxcode" variable (:type "int") (reparse-symbol classsubparts) [1978 1990])
+                    ("output_bytes" variable (:type "int") (reparse-symbol classsubparts) [2030 2047])
+                    ("last_code" variable (:type "int") (reparse-symbol classsubparts) [2088 2102]))                  
+                :type "struct")
+                nil [1510 2180])
+            ("hash" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("head" variable (:type "int") (reparse-symbol arg-sub-list) [2402 2411])
+                    ("add" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2412 2426]))                  
+                :type "int")
+                nil [2379 2593])
+            ("hashNext" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("head" variable (:type "int") (reparse-symbol arg-sub-list) [2781 2790])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2791 2808]))                  
+                :type "int")
+                nil [2754 2897])
+            ("hashOffset" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("head" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3031 3046]))                  
+                :type "int")
+                nil [3002 3094])
+            ("writeCode" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("LZWEncodeState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3209 3228])
+                    ("c" variable (:type "int") (reparse-symbol arg-sub-list) [3229 3235]))                  
+                :type "void")
+                nil [3180 3313])
+            ("findCode" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("LZWEncodeState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3536 3555])
+                    ("c" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3556 3566])
+                    ("hash_prefix" variable (:type "int") (reparse-symbol arg-sub-list) [3567 3583]))                  
+                :type "int")
+                nil [3509 3896])
+            ("addCode" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("LZWEncodeState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4109 4128])
+                    ("c" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4129 4139])
+                    ("hash_prefix" variable (:type "int") (reparse-symbol arg-sub-list) [4140 4156])
+                    ("hash_code" variable (:type "int") (reparse-symbol arg-sub-list) [4157 4171]))                  
+                :type "void")
+                nil [4082 4374])
+            ("clearTable" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("LZWEncodeState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4453 4472]))                  
+                :type "void")
+                nil [4430 4830])
+            ("writtenBytes" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("LZWEncodeState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4965 4983]))                  
+                :type "int")
+                nil [4941 5101])
+            ("ff_lzw_encode_init" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("LZWEncodeState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5361 5380])
+                    ("outbuf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5381 5398])
+                    ("outsize" variable (:type "int") (reparse-symbol arg-sub-list) [5399 5411])
+                    ("maxbits" variable (:type "int") (reparse-symbol arg-sub-list) [5412 5424]))                  
+                :type "void")
+                nil [5337 5742])
+            ("ff_lzw_encode" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("LZWEncodeState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5939 5958])
+                    ("inbuf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5959 5981])
+                    ("insize" variable (:type "int") (reparse-symbol arg-sub-list) [5982 5993]))                  
+                :type "int")
+                nil [5921 6616])
+            ("ff_lzw_encode_flush" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("LZWEncodeState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6760 6779]))                  
+                :type "int")
+                nil [6736 6958]))          
+    :file "lzwenc.c"
+    :pointmax 6881
+    :fsize 6880
+    :lastmodtime '(18459 12712)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("LZW_MAXBITS" . ((number "12" 980 . 982)))
+          ("LZW_PREFIX_FREE" . ((punctuation "-" 1127 . 1128) (number "2" 1128 . 1129)))
+          ("LZW_HASH_SHIFT" . ((number "6" 1118 . 1119)))
+          ("LZW_HASH_SIZE" . ((number "16411" 1061 . 1066)))
+          ("LZW_PREFIX_EMPTY" . ((punctuation "-" 1178 . 1179) (number "1" 1179 . 1180)))
+          ("LZW_SIZTABLE" . ((semantic-list "(1<<LZW_MAXBITS)" 1004 . 1020)))
+          )
+
+    )
+   )
+  :file "!home!mzy!下载!xvidcap-1.1.7!ffmpeg!libavcodec!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

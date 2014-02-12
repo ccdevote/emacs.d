@@ -1,0 +1,140 @@
+;; Object quner/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "quner/"
+  :tables (list 
+   (semanticdb-table "activity.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("quner活动页" section nil nil [60 164])
+            ("hi,<span class="r_t_info">徐超" section (:members 
+              ( ("活动信息" section nil nil [587 815]))              ) nil [164 815])
+            ("" section nil nil [815 897]))          
+    :file "activity.html"
+    :pointmax 897
+    :fsize 966
+    :lastmodtime '(21156 20735)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("test" section nil nil [82 237])
+            ("(function() {
+        $(".proCitySelAll").click(function(event) {
+                if ($("body").data("CitysAll") == null) {
+                        sendAllCitiesAjax();
+                }
+                $(this).select();
+                $(".provinceCity").hide();
+                $(".provinceCityAll").hide();
+                $("#dimCityQuery").hide();
+                var o2 = $(this).offset();
+                var l2 = o2.left;
+                var t2 = o2.top;
+                var h2 = $(this).height();
+                $(".provinceCityAll").css("top", t2 + h2 - 1).css("left", l2).toggle();
+                $(".provinceCityAll").click(function(event) {
+                        event.stopPropagation();
+                });
+                event.stopPropagation();
+                $("html").click(function() {
+                        $(".provinceCityAll").hide();
+                });
+                $("input.proCitySelAll").removeClass("current2");
+                $(this).addClass("current2");
+                $(".provinceCityAll").find(".tabs").find("a").removeClass("current");
+                $(".provinceCityAll").find(".tabs").find("a[tb=hotCityAll]").addClass("current");
+                $(".provinceCityAll").find(".con").children().hide();
+                $(".provinceCityAll").find(".con").find(".hotCityAll").show();
+                if ($("body").data("allProvinces") == null) {
+                        sendAllProvinceAjax();
+                }
+                if ($("body").data("allCountys") == null) {
+                        sendAllCountiesAjax();
+                }
+                $(".provinceCityAll").find(".tabs").find("a").click(function() {
+                        if ($(this).attr("tb") == "cityAll" && $(".provinceAll .list .current").val() == null) {
+                                return;
+                        };
+                        if ($(this).attr("tb") == "countyAll" && $(".cityAll .list .current").val() == null && $(".hotCityAll .list .current").val() == null) {
+                                return;
+                        };
+                        $(".provinceCityAll").find(".tabs").find("a").removeClass("current");
+                        $(this).addClass("current");
+                        var tb = $(this).attr("tb");
+                        $(".provinceCityAll").find(".con").children().hide();
+                        $(".provinceCityAll").find(".con").find("." + tb).show();
+                });
+        });
+})();" section nil nil [237 327])
+            ("(function() {
+        $(".proCitySelAll").click(function(event) {
+                if ($("body").data("CitysAll") == null) {
+                        sendAllCitiesAjax();
+                }
+                $(this).select();
+                $(".provinceCity").hide();
+                $(".provinceCityAll").hide();
+                $("#dimCityQuery").hide();
+                var o2 = $(this).offset();
+                var l2 = o2.left;
+                var t2 = o2.top;
+                var h2 = $(this).height();
+                $(".provinceCityAll").css("top", t2 + h2 - 1).css("left", l2).toggle();
+                $(".provinceCityAll").click(function(event) {
+                        event.stopPropagation();
+                });
+                event.stopPropagation();
+                $("html").click(function() {
+                        $(".provinceCityAll").hide();
+                });
+                $("input.proCitySelAll").removeClass("current2");
+                $(this).addClass("current2");
+                $(".provinceCityAll").find(".tabs").find("a").removeClass("current");
+                $(".provinceCityAll").find(".tabs").find("a[tb=hotCityAll]").addClass("current");
+                $(".provinceCityAll").find(".con").children().hide();
+                $(".provinceCityAll").find(".con").find(".hotCityAll").show();
+                if ($("body").data("allProvinces") == null) {
+                        sendAllProvinceAjax();
+                }
+                if ($("body").data("allCountys") == null) {
+                        sendAllCountiesAjax();
+                }
+                $(".provinceCityAll").find(".tabs").find("a").click(function() {
+                        if ($(this).attr("tb") == "cityAll" && $(".provinceAll .list .current").val() == null) {
+                                return;
+                        };
+                        if ($(this).attr("tb") == "countyAll" && $(".cityAll .list .current").val() == null && $(".hotCityAll .list .current").val() == null) {
+                                return;
+                        };
+                        $(".provinceCityAll").find(".tabs").find("a").removeClass("current");
+                        $(this).addClass("current");
+                        var tb = $(this).attr("tb");
+                        $(".provinceCityAll").find(".con").children().hide();
+                        $(".provinceCityAll").find(".con").find("." + tb).show();
+                });
+        });
+})();" section nil nil [327 2859])
+            (">
+<div class="provinceCityAll">
+  <div class="tabs clearfix">
+    <ul class="">
+      <li><a href="javascript:" class="current" tb="hotCityAll">热门城市" section (:members 
+              ( ("热门城市" anchor nil nil [3145 3148])
+                ("省份" anchor nil nil [3223 3226])
+                ("城市" anchor nil nil [3284 3287])
+                ("区县" anchor nil nil [3354 3357])
+                ("南京" anchor nil nil [3619 3622])
+                ("江西省" anchor nil nil [3925 3928])
+                ("南京" anchor nil nil [4228 4231]))              ) nil [2859 4603]))          
+    :file "test.html"
+    :pointmax 4603
+    :fsize 4682
+    :lastmodtime '(21156 37366)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!mzy!myapp!quner!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

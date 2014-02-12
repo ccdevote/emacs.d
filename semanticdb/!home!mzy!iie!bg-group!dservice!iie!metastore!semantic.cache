@@ -1,0 +1,41 @@
+;; Object metastore/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "metastore/"
+  :tables (list 
+   (semanticdb-table "MetaStoreClient.java"
+    :major-mode 'java-mode
+    :tags nil
+    :file "MetaStoreClient.java"
+    :pointmax 69281
+    :fsize 69280
+    :lastmodtime '(21166 35761)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "JavaUtils.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("iie.metastore" package nil nil [810 832])
+            ("JavaUtils" type
+               (:typemodifiers ("public" "final")
+                :members 
+                  ( ("getClassLoader" function
+                       (:typemodifiers ("public" "static")
+                        :type "ClassLoader")
+                        (reparse-symbol class_member_declaration) [1280 1521])
+                    ("JavaUtils" function
+                       (:constructor-flag t
+                        :typemodifiers ("private"))
+                        (reparse-symbol class_member_declaration) [1525 1579]))                  
+                :type "class")
+                nil [930 1581]))          
+    :file "JavaUtils.java"
+    :pointmax 1582
+    :fsize 1581
+    :lastmodtime '(21152 7968)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!mzy!iie!bg-group!dservice!iie!metastore!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

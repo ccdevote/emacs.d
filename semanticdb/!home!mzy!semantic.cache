@@ -1,0 +1,30 @@
+;; Object mzy/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mzy/"
+  :tables (list 
+     (semanticdb-table "test.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("string.h" include (:system-flag t) nil [20 39])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [49 58])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [59 72]))                  
+                :type "int")
+                nil [40 293]))          
+    :file "test.c"
+    :pointmax 289
+    :fsize 293
+    :lastmodtime '(21179 47442)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!mzy!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

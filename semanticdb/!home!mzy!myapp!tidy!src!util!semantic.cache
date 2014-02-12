@@ -1,0 +1,330 @@
+;; Object util/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "util/"
+  :tables (list 
+   (semanticdb-table "alist.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_TIDY_ALIST_H" variable (:constant-flag t) nil [31 44])
+            ("listNode" type
+               (:typedef ("listNode" type (:type "struct") nil nil)
+                :superclasses "listNode"
+                :type "typedef")
+                nil [102 212])
+            ("listNode" type
+               (:members 
+                  ( ("prev" variable
+                       (:pointer 1
+                        :type ("listNode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [131 154])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("listNode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [159 182])
+                    ("value" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [187 200]))                  
+                :type "struct")
+                nil [102 212])
+            ("listIter" type
+               (:typedef ("listIter" type (:type "struct") nil nil)
+                :superclasses "listIter"
+                :type "typedef")
+                nil [214 290])
+            ("listIter" type
+               (:members 
+                  ( ("next" variable
+                       (:pointer 1
+                        :type ("listNode" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [243 259])
+                    ("direction" variable (:type "int") (reparse-symbol classsubparts) [264 278]))                  
+                :type "struct")
+                nil [214 290])
+            ("list" type
+               (:typedef ("list" type (:type "struct") nil nil)
+                :superclasses "list"
+                :type "typedef")
+                nil [292 482])
+            ("list" type
+               (:members 
+                  ( ("head" variable
+                       (:pointer 1
+                        :type ("listNode" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [317 333])
+                    ("tail" variable
+                       (:pointer 1
+                        :type ("listNode" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [338 354])
+                    ("dup" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [359 383])
+                    ("free" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [388 412])
+                    ("match" variable
+                       (:functionpointer-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [417 451])
+                    ("len" variable (:type "unsigned long") (reparse-symbol classsubparts) [456 474]))                  
+                :type "struct")
+                nil [292 482])
+            ("listLength" variable (:constant-flag t) nil [530 540])
+            ("listFirst" variable (:constant-flag t) nil [627 636])
+            ("listLast" variable (:constant-flag t) nil [738 746])
+            ("listPrevNode" variable (:constant-flag t) nil [848 860])
+            ("listNextNode" variable (:constant-flag t) nil [964 976])
+            ("listNodeValue" variable (:constant-flag t) nil [1076 1089])
+            ("listSetDupMothod" variable (:constant-flag t) nil [1184 1200])
+            ("listFreeMethod" variable (:constant-flag t) nil [1290 1304])
+            ("listMatchMethod" variable (:constant-flag t) nil [1396 1411])
+            ("listGetDupMethod" variable (:constant-flag t) nil [1503 1519])
+            ("listGetFreeMethod" variable (:constant-flag t) nil [1611 1628])
+            ("listGetMatchMethod" variable (:constant-flag t) nil [1719 1737])
+            ("listCreate" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1855 1860]))                  
+                :type ("list" type (:type "class") nil nil))
+                nil [1838 1861])
+            ("listRelease" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("l" variable
+                       (:pointer 1
+                        :type ("list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1909 1918]))                  
+                :type "void")
+                nil [1892 1919])
+            ("listAddNodeHead" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("l" variable
+                       (:pointer 1
+                        :type ("list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1970 1979])
+                    ("value" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1980 1993]))                  
+                :type ("list" type (:type "class") nil nil))
+                nil [1947 1994])
+            ("listAddNodeTail" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("l" variable
+                       (:pointer 1
+                        :type ("list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2043 2052])
+                    ("value" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2053 2066]))                  
+                :type ("list" type (:type "class") nil nil))
+                nil [2020 2067])
+            ("listInsertNode" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("l" variable
+                       (:pointer 1
+                        :type ("list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2115 2124])
+                    ("oldNode" variable
+                       (:pointer 1
+                        :type ("listNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2124 2143])
+                    ("value" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2143 2156])
+                    ("after" variable (:type "int") (reparse-symbol arg-sub-list) [2156 2166]))                  
+                :type ("list" type (:type "class") nil nil))
+                nil [2093 2167])
+            ("listDelNode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("l" variable
+                       (:pointer 1
+                        :type ("list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2255 2264])
+                    ("node" variable
+                       (:pointer 1
+                        :type ("listNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2264 2280]))                  
+                :type "void")
+                nil [2238 2281])
+            ("listGetIterator" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("l" variable
+                       (:pointer 1
+                        :type ("list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2343 2353])
+                    ("direction" variable (:type "int") (reparse-symbol arg-sub-list) [2353 2367]))                  
+                :type ("listIter" type (:type "class") nil nil))
+                nil [2316 2368])
+            ("listNext" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("listIter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2424 2440]))                  
+                :type ("listNode" type (:type "class") nil nil))
+                nil [2404 2441])
+            ("listReleaseIterator" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("listIter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2524 2540]))                  
+                :type "void")
+                nil [2499 2541])
+            ("listDup" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("orig" variable
+                       (:pointer 1
+                        :type ("list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2606 2618]))                  
+                :type ("list" type (:type "class") nil nil))
+                nil [2591 2619])
+            ("listSearchKey" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("l" variable
+                       (:pointer 1
+                        :type ("list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2687 2696])
+                    ("key" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2696 2707]))                  
+                :type ("listNode" type (:type "class") nil nil))
+                nil [2662 2708])
+            ("listIndex" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("l" variable
+                       (:pointer 1
+                        :type ("list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2788 2797])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [2798 2808]))                  
+                :type ("listNode" type (:type "class") nil nil))
+                nil [2767 2809])
+            ("listRewind" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("l" variable
+                       (:pointer 1
+                        :type ("list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2894 2902])
+                    ("iter" variable
+                       (:pointer 1
+                        :type ("listIter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2902 2918]))                  
+                :type "void")
+                nil [2878 2919])
+            ("listRewindTail" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("l" variable
+                       (:pointer 1
+                        :type ("list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3001 3009])
+                    ("iter" variable
+                       (:pointer 1
+                        :type ("listIter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3009 3025]))                  
+                :type "void")
+                nil [2981 3026])
+            ("AL_START_HEAD" variable (:constant-flag t) nil [3121 3134])
+            ("AL_START_TAIL" variable (:constant-flag t) nil [3145 3158]))          
+    :file "alist.h"
+    :pointmax 3155
+    :fsize 3168
+    :lastmodtime '(21176 13832)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("AL_START_HEAD" . ((number "0" 3121 . 3122)))
+          ("listGetFreeMethod" (spp-arg-list ("l") 1614 . 1617) . ((semantic-list "((l)->free)" 1618 . 1629)))
+          ("listPrevNode" (spp-arg-list ("n") 846 . 849) . ((semantic-list "((n)->prev)" 850 . 861)))
+          ("listGetDupMethod" (spp-arg-list ("l") 1505 . 1508) . ((semantic-list "((l)->dup)" 1509 . 1519)))
+          ("listMatchMethod" (spp-arg-list ("l" "m") 1397 . 1402) . ((semantic-list "((l)->match = (m))" 1403 . 1421)))
+          ("listNextNode" (spp-arg-list ("n") 962 . 965) . ((semantic-list "((n)->next)" 966 . 977)))
+          ("_TIDY_ALIST_H")
+          ("listNodeValue" (spp-arg-list ("n") 1075 . 1078) . ((semantic-list "((n)->value)" 1079 . 1091)))
+          ("listFreeMethod" (spp-arg-list ("l" "m") 1290 . 1295) . ((semantic-list "((l)->free = (m))" 1296 . 1313)))
+          ("AL_START_TAIL" . ((number "1" 3145 . 3146)))
+          ("listFirst" (spp-arg-list ("l") 622 . 625) . ((semantic-list "((l)->head)" 626 . 637)))
+          ("listGetMatchMethod" (spp-arg-list ("l") 1723 . 1726) . ((semantic-list "((l)->match)" 1727 . 1739)))
+          ("listLast" (spp-arg-list ("l") 732 . 735) . ((semantic-list "((l)->tail)" 736 . 747)))
+          ("listLength" (spp-arg-list ("l") 526 . 529) . ((semantic-list "((l)->len)" 530 . 540)))
+          ("listSetDupMothod" (spp-arg-list ("l" "m") 1186 . 1191) . ((semantic-list "((l)->dup = (m))" 1192 . 1208)))
+          )
+
+    )
+   (semanticdb-table "dltest.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("dlfcn.h" include (:system-flag t) nil [40 58])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [68 77])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [78 91]))                  
+                :type "int")
+                nil [59 609]))          
+    :file "dltest.c"
+    :pointmax 604
+    :fsize 609
+    :lastmodtime '(21172 6571)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "xxx.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 18])
+            ("sayHello" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33 50]))                  
+                :type "void")
+                nil [19 79]))          
+    :file "xxx.c"
+    :pointmax 80
+    :fsize 79
+    :lastmodtime '(21172 6491)
+    :unmatched-syntax '((symbol 19 . 20) (symbol 16 . 17) (punctuation 15 . 16) (symbol 10 . 15) (punctuation 9 . 10) (symbol 2 . 9) (punctuation 1 . 2) (punctuation 15 . 16) (symbol 10 . 15) (punctuation 9 . 10) (symbol 2 . 9) (punctuation 1 . 2))
+    )
+   )
+  :file "!home!mzy!myapp!tidy!src!util!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

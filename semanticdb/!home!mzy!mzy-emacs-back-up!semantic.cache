@@ -1,0 +1,18 @@
+;; Object mzy-emacs-back-up/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mzy-emacs-back-up/"
+  :tables (list 
+   (semanticdb-table ".emacs.c"
+    :major-mode 'c-mode
+    :tags nil
+    :file ".emacs.c"
+    :pointmax 75
+    :fsize 74
+    :lastmodtime '(21112 21521)
+    :unmatched-syntax '((semantic-list 1 . 74))
+    )
+   )
+  :file "!home!mzy!mzy-emacs-back-up!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

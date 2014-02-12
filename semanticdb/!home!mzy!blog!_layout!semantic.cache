@@ -1,0 +1,19 @@
+;; Object _layout/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "_layout/"
+  :tables (list 
+   (semanticdb-table "default.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("{{page.title}}" section nil nil [272 330]))          
+    :file "default.html"
+    :pointmax 330
+    :fsize 329
+    :lastmodtime '(21241 63467)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!mzy!blog!_layout!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

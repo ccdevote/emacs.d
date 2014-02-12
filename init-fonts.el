@@ -7,7 +7,7 @@
 (defun sanityinc/maybe-use-default-font-for-symbols ()
   "Force Emacs to render symbols using the default font, if so configured."
   (when sanityinc/force-default-font-for-symbols
-    (set-fontset-font "fontset-default" 'symbol (face-attribute 'default :family))))
+    (set-fontset-font "fontset-default" 'symbol (face-attribute 'default :Helvetica))))
 
 (add-hook 'after-init-hook 'sanityinc/maybe-use-default-font-for-symbols)
 

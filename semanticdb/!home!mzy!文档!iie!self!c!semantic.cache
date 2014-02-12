@@ -1,0 +1,65 @@
+;; Object c/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "c/"
+  :tables (list 
+   (semanticdb-table "file.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("Fopen" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33 40])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [40 47]))                  
+                :type ("FILE" type (:type "class") nil nil))
+                nil [20 48])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [58 67])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [68 81]))                  
+                :type "int")
+                nil [49 281])
+            ("Fopen" function
+               (:pointer 1
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [296 307])
+                    ("mode" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [307 318]))                  
+                :type ("FILE" type (:type "class") nil nil))
+                nil [283 456]))          
+    :file "file.c"
+    :pointmax 457
+    :fsize 456
+    :lastmodtime '(21166 24653)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "c.html"
+    :major-mode 'html-mode
+    :tags nil
+    :file "c.html"
+    :pointmax 1
+    :fsize 6575
+    :lastmodtime '(21163 15218)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!mzy!文档!iie!self!c!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

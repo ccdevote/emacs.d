@@ -1,0 +1,18 @@
+;; Object mzy/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mzy/"
+  :tables (list 
+   (semanticdb-table "基于P2P技术的分布式系统的设计与实现(beta).html"
+    :major-mode 'html-mode
+    :tags nil
+    :file "基于P2P技术的分布式系统的设计与实现(beta).html"
+    :pointmax 106
+    :fsize 137
+    :lastmodtime '(21152 13667)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!mzy!文档!mzy!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

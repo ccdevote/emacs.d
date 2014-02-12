@@ -1,0 +1,18 @@
+;; Object _posts/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "_posts/"
+  :tables (list 
+   (semanticdb-table "protobuf.html"
+    :major-mode 'html-mode
+    :tags nil
+    :file "protobuf.html"
+    :pointmax 1
+    :fsize 4754
+    :lastmodtime '(21240 17644)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!soft!blog!_posts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

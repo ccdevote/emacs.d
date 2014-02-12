@@ -1,0 +1,75 @@
+;; Object stats/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "stats/"
+  :tables (list 
+   (semanticdb-table "Lustat.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("cn.iie.lutools.stats" package nil nil [1 30])
+            ("com.google.common.base.Strings" include nil nil [33 71])
+            ("com.google.common.base.Throwables" include nil nil [72 113])
+            ("devmap.DevMap" include nil nil [115 136])
+            ("org.apache.lucene.document.Document" include nil nil [138 181])
+            ("org.apache.lucene.index.DirectoryReader" include nil nil [182 229])
+            ("org.apache.lucene.index.IndexReader" include nil nil [230 273])
+            ("org.apache.lucene.index.IndexableField" include nil nil [274 320])
+            ("org.apache.lucene.search.IndexSearcher" include nil nil [321 367])
+            ("org.apache.lucene.search.MatchAllDocsQuery" include nil nil [368 418])
+            ("org.apache.lucene.search.TotalHitCountCollector" include nil nil [419 474])
+            ("org.apache.lucene.store.NIOFSDirectory" include nil nil [475 521])
+            ("java.io.*" include nil nil [523 540])
+            ("java.util.StringTokenizer" include nil nil [541 574])
+            ("Lustat" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("searcher" variable
+                       (:typemodifiers ("private" "final")
+                        :type "IndexSearcher")
+                        (reparse-symbol class_member_declaration) [705 742])
+                    ("path" variable
+                       (:typemodifiers ("private" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [747 773])
+                    ("Lustat" function
+                       (:constructor-flag t
+                        :throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("path" variable (:type "String") (reparse-symbol formal_parameters) [792 803]))                          )
+                        (reparse-symbol class_member_declaration) [778 1039])
+                    ("countRecord" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1099 1611])
+                    ("countDiskSize" function
+                       (:typemodifiers ("public")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [1676 2419])
+                    ("countIndexSize" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("count" variable (:type "int") (reparse-symbol formal_parameters) [2542 2551]))                          
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [2514 3168])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [3198 3211]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3174 4218]))                  
+                :type "class")
+                nil [678 4220]))          
+    :file "Lustat.java"
+    :pointmax 4221
+    :fsize 4370
+    :lastmodtime '(21170 48323)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!mzy!workspace!lutools!src!cn!iie!lutools!stats!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

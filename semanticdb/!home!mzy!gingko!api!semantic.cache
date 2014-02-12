@@ -1,0 +1,154 @@
+;; Object api/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "api/"
+  :tables (list 
+   (semanticdb-table "api.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("gingko.h" include nil nil [895 914])
+            ("GINGKO_MAX_SUID" variable (:constant-flag t) nil [991 1006])
+            ("gingko_conf" type
+               (:members 
+                  ( ("max_suid" variable (:type "int") (reparse-symbol classsubparts) [1047 1060]))                  
+                :type "struct")
+                nil [1022 1063])
+            ("g_conf" variable
+               (:typemodifiers ("static")
+                :type ("gingko_conf" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1065 1137])
+            ("gingko_manager" type
+               (:members 
+                  ( ("gc" variable
+                       (:pointer 1
+                        :type ("gingko_conf" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1167 1190])
+                    ("gsu" variable
+                       (:pointer 1
+                        :type ("gingko_su" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1196 1218])
+                    ("gsu_lock" variable (:type ("xlock_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1223 1240])
+                    ("gsu_used" variable (:type "int") (reparse-symbol classsubparts) [1245 1258]))                  
+                :type "struct")
+                nil [1139 1262])
+            ("g_mgr" variable
+               (:typemodifiers ("static")
+                :type ("gingko_manager" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1264 1360])
+            ("gingko_init" function
+               (:arguments 
+                  ( ("conf" variable
+                       (:pointer 1
+                        :type ("gingko_conf" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1378 1403]))                  
+                :type "int")
+                nil [1362 1764])
+            ("__alloc_su" function
+               (:pointer 1
+                :arguments 
+                  ( ("gm" variable
+                       (:pointer 1
+                        :type ("gingko_manager" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1795 1821])
+                    ("flag" variable (:type "int") (reparse-symbol arg-sub-list) [1822 1831]))                  
+                :type ("gingko_su" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1766 2447])
+            ("__calc_suid" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("gm" variable
+                       (:pointer 1
+                        :type ("gingko_manager" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2472 2498])
+                    ("gs" variable
+                       (:pointer 1
+                        :type ("gingko_su" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2499 2520]))                  
+                :type "int")
+                nil [2449 2621])
+            ("__free_su" function
+               (:arguments 
+                  ( ("gs" variable
+                       (:pointer 1
+                        :type ("gingko_su" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2638 2659]))                  
+                :type "void")
+                nil [2623 2801])
+            ("su_open" function
+               (:arguments 
+                  ( ("supath" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2876 2889])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [2890 2899]))                  
+                :type "int")
+                nil [2864 6157])
+            ("su_getschema" function
+               (:pointer 1
+                :arguments 
+                  ( ("suid" variable (:type "int") (reparse-symbol arg-sub-list) [6249 6258]))                  
+                :type ("field" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [6222 6279])
+            ("su_create" function
+               (:arguments 
+                  ( ("supath" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6314 6327])
+                    ("schemas" variable
+                       (:dereference 1
+                        :type ("field" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6328 6351])
+                    ("schelen" variable (:type "int") (reparse-symbol arg-sub-list) [6352 6364]))                  
+                :type "int")
+                nil [6300 6402]))          
+    :file "api.c"
+    :pointmax 6403
+    :fsize 6402
+    :lastmodtime '(21139 7803)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GINGKO_MAX_SUID" . ((number "102400" 1015 . 1021)))
+          )
+
+    )
+   )
+  :file "!home!mzy!gingko!api!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

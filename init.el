@@ -51,8 +51,8 @@
 (require 'init-editing-utils)
 
 (require 'init-darcs)
-(require 'init-git)
-
+;;(require 'init-git)
+(require  'init-git-emacs)
 (require 'init-crontab)
 (require 'init-textile)
 (require 'init-markdown)
@@ -66,7 +66,7 @@
 ;;(require 'init-haml)
 (require 'init-python-mode)
 ;;(require 'init-haskell)
-;;(require 'init-ruby-mode)
+;;(require 'init-ruby-modes)
 ;;(require 'init-rails)
 (require 'init-sql)
 

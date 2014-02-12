@@ -1,0 +1,20 @@
+;; Object python/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "python/"
+  :tables (list 
+   (semanticdb-table "python.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sayHello" function nil nil [1 74])
+            ("sayHello" code nil nil [74 84]))          
+    :file "python.py"
+    :pointmax 86
+    :fsize 85
+    :lastmodtime '(21164 35692)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!mzy!文档!iie!self!python!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

@@ -1,0 +1,35 @@
+;; Object blog/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "blog/"
+  :tables (list 
+   (semanticdb-table "index.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("Blog Posts" section (:members 
+              ( ("{{ post.title }}" anchor nil nil [208 211]))              ) nil [70 293]))          
+    :file "index.html"
+    :pointmax 293
+    :fsize 292
+    :lastmodtime '(21242 2560)
+    :unmatched-syntax 'nil
+    )
+      (semanticdb-table "index.html.bak"
+    :major-mode 'html-mode
+    :tags 
+        '( ("Welcome to my blog" section nil nil [80 401])
+            ("add cdn bootstrap -->
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.js">" section nil nil [401 504])
+            ("の前路@……" section nil nil [504 586])
+            ("の前路@……" section nil nil [586 662])
+            ("の前路@……" section (:members 
+              ( ("の前路@……" section (:members 
+                  ( ("{{ post.title }}" anchor nil nil [1033 1036]))                  ) nil [725 1219]))              ) nil [662 1219]))          
+    :file "index.html.bak"
+    :pointmax 1219
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!mzy!blog!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

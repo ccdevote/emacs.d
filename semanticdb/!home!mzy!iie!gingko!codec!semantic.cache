@@ -1,0 +1,470 @@
+;; Object codec/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "codec/"
+  :tables (list 
+   (semanticdb-table "dict.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [23 41])
+            ("stdlib.h" include (:system-flag t) nil [42 61])
+            ("DIC_SIZE" variable (:constant-flag t) nil [70 78])
+            ("dic_entry" type
+               (:members 
+                  ( ("k" variable (:type "int") (reparse-symbol classsubparts) [126 132])
+                    ("v" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [137 146]))                  
+                :type "struct")
+                nil [104 149])
+            ("dictionary" type
+               (:members 
+                  ( ("count" variable (:type "int") (reparse-symbol classsubparts) [173 183])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("dic" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [188 206])
+                    ("add" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [211 231])
+                    ("read" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [236 260]))                  
+                :type "struct")
+                nil [150 263])
+            ("codec_dict" type
+               (:members 
+                  ( ("dict" variable
+                       (:pointer 1
+                        :type ("dictionary" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [287 311])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [316 327]))                  
+                :type "struct")
+                nil [264 330])
+            ("dictEncoder" function
+               (:arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [348 362])
+                    ("target" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [362 376]))                  
+                :type "int")
+                nil [332 393])
+            ("dictDecoder" function
+               (:arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [410 424])
+                    ("target" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [424 438]))                  
+                :type "int")
+                nil [394 455])
+            ("addRecord" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [478 485]))                  
+                :type "void")
+                nil [456 486])
+            ("readRecord" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [512 516])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [516 520]))                  
+                :type "void")
+                nil [487 521])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [532 541])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [542 555]))                  
+                :type "int")
+                nil [523 790])
+            ("addRecord" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [806 818]))                  
+                :type "void")
+                nil [791 859])
+            ("readRecord" function
+               (:pointer 1
+                :arguments 
+                  ( ("s" variable (:type "int") (reparse-symbol arg-sub-list) [878 884])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [884 892]))                  
+                :type "void")
+                nil [860 949]))          
+    :file "dict.c"
+    :pointmax 950
+    :fsize 0
+    :lastmodtime '(21153 17023)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DIC_SIZE" . 
+              ((number "1" 79 . 80) (punctuation "<" 80 . 81) (punctuation "<" 81 . 82) (number "0x0F" 82 . 86)))
+          )
+
+    )
+   (semanticdb-table "dict.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__DICT_H" variable (:constant-flag t) nil [26 34])
+            ("dictEncoder" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [62 76])
+                    ("target" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [76 90]))                  
+                :type "int")
+                nil [46 91])
+            ("dictDecoder" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [108 122])
+                    ("target" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [122 136]))                  
+                :type "int")
+                nil [92 137]))          
+    :file "dict.h"
+    :pointmax 145
+    :fsize 144
+    :lastmodtime '(21140 14148)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__DICT_H")
+          )
+
+    )
+   (semanticdb-table "codec.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("gingko.h" include nil nil [1 20])
+            ("initCodec" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [36 41]))                  
+                :type "int")
+                nil [22 555]))          
+    :file "codec.c"
+    :pointmax 556
+    :fsize 555
+    :lastmodtime '(21140 14610)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "delta.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__DELTA_H" variable (:constant-flag t) nil [27 36])
+            ("deltaEncoder" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [64 78])
+                    ("target" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [78 92]))                  
+                :type "int")
+                nil [47 93])
+            ("deltaDecoder" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [111 125])
+                    ("target" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [125 139]))                  
+                :type "int")
+                nil [94 140]))          
+    :file "delta.h"
+    :pointmax 148
+    :fsize 147
+    :lastmodtime '(21140 14243)
+    :unmatched-syntax '((semantic-list 110 . 139) (symbol 98 . 110) (INT 94 . 97) (symbol 98 . 109) (INT 94 . 97) (symbol 98 . 109) (INT 94 . 97) (symbol 98 . 110) (INT 94 . 97) (symbol 98 . 101) (INT 94 . 97) (INT 94 . 97) (symbol 51 . 55) (INT 47 . 50) (INT 47 . 50))
+    :lexical-table 
+        '(("__DELTA_H")
+          )
+
+    )
+   (semanticdb-table "runlen.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__RUNLEN_H" variable (:constant-flag t) nil [28 38])
+            ("runlenEncoder" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [68 82])
+                    ("target" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [82 96]))                  
+                :type "int")
+                nil [50 97])
+            ("runlenDecoder" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [116 130])
+                    ("target" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [130 144]))                  
+                :type "int")
+                nil [98 145]))          
+    :file "runlen.h"
+    :pointmax 153
+    :fsize 152
+    :lastmodtime '(21140 14323)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__RUNLEN_H")
+          )
+
+    )
+   (semanticdb-table "delta.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("gingko.h" include nil nil [1 20])
+            ("deltaEncoder" function
+               (:arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [38 52])
+                    ("target" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [52 66]))                  
+                :type "int")
+                nil [21 83])
+            ("deltaDecoder" function
+               (:arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [101 115])
+                    ("target" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [115 129]))                  
+                :type "int")
+                nil [84 146]))          
+    :file "delta.c"
+    :pointmax 147
+    :fsize 0
+    :lastmodtime '(21153 17023)
+    :unmatched-syntax '((semantic-list 100 . 112) (symbol 88 . 100) (symbol 108 . 111) (INT 84 . 87) (symbol 108 . 111) (symbol 25 . 28) (INT 21 . 24) (symbol 25 . 27) (INT 21 . 24) (INT 21 . 24) (symbol 21 . 22) (string 10 . 20) (symbol 2 . 9) (punctuation 1 . 2) (string 10 . 17) (symbol 2 . 9) (punctuation 1 . 2) (string 10 . 16) (symbol 2 . 9) (punctuation 1 . 2) (string 10 . 14) (symbol 2 . 9) (punctuation 1 . 2) (string 10 . 15) (symbol 2 . 9) (punctuation 1 . 2) (string 10 . 13) (symbol 2 . 9) (punctuation 1 . 2) (symbol 2 . 6) (punctuation 1 . 2) (symbol 2 . 3) (punctuation 1 . 2) (punctuation 1 . 2))
+    )
+   (semanticdb-table "runlen.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("gingko.h" include nil nil [1 20])
+            ("runlenEncoder" function
+               (:arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [39 53])
+                    ("target" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [53 67]))                  
+                :type "int")
+                nil [21 84])
+            ("runlenDecoder" function
+               (:arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [103 117])
+                    ("target" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [117 131]))                  
+                :type "int")
+                nil [85 148]))          
+    :file "runlen.c"
+    :pointmax 149
+    :fsize 0
+    :lastmodtime '(21153 17023)
+    :unmatched-syntax '((semantic-list 38 . 67) (symbol 25 . 38) (INT 21 . 24) (semantic-list 38 . 64) (symbol 25 . 38) (INT 21 . 24) (symbol 21 . 22) (string 10 . 20) (symbol 2 . 9) (punctuation 1 . 2) (string 10 . 17) (symbol 2 . 9) (punctuation 1 . 2) (string 10 . 16) (symbol 2 . 9) (punctuation 1 . 2) (string 10 . 13) (symbol 2 . 9) (punctuation 1 . 2) (string 10 . 13) (symbol 2 . 9) (punctuation 1 . 2) (symbol 2 . 6) (punctuation 1 . 2) (symbol 2 . 3) (punctuation 1 . 2) (punctuation 1 . 2))
+    )
+   (semanticdb-table "lzw.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_LZW_H_" variable (:constant-flag t) nil [25 32])
+            ("stdlib.h" include (:system-flag t) nil [33 52])
+            ("ctype.h" include (:system-flag t) nil [53 71])
+            ("stdio.h" include (:system-flag t) nil [72 90])
+            ("MAX_BIT_SIZE" variable (:constant-flag t) nil [99 111])
+            ("MAX_DIC_SIZE" variable (:constant-flag t) nil [125 137])
+            ("MIN_DIC_SIZE" variable (:constant-flag t) nil [164 176])
+            ("MIN_COMPRESS_RATIO" variable (:constant-flag t) nil [206 224])
+            ("BUFFER_SIZE" variable (:constant-flag t) nil [238 249])
+            ("Dict" type
+               (:typedef ("dict" type (:type "struct") nil nil)
+                :superclasses "dict"
+                :type "typedef")
+                nil [257 488])
+            ("dict" type
+               (:members 
+                  ( ("parent" variable (:type "unsigned int") (reparse-symbol classsubparts) [282 302])
+                    ("index" variable (:type "unsigned int") (reparse-symbol classsubparts) [345 364])
+                    ("value" variable (:type "char") (reparse-symbol classsubparts) [413 424]))                  
+                :type "struct")
+                nil [257 488])
+            ("getDirectory" function
+               (:prototype-flag t
+                :pointer 1
+                :type ("Dict" type (:type "class") nil nil))
+                nil [489 511])
+            ("setDirectory" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dict" variable
+                       (:pointer 1
+                        :type ("Dict" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [530 542]))                  
+                :type "void")
+                nil [512 543])
+            ("encode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("in" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [555 565])
+                    ("out" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [565 583]))                  
+                :type "int")
+                nil [544 584])
+            ("decode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("in" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [596 613])
+                    ("out" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [613 624]))                  
+                :type "int")
+                nil [585 625])
+            ("checkRatio" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("inSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [643 657])
+                    ("outSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [657 672]))                  
+                :type "float")
+                nil [626 673]))          
+    :file "lzw.h"
+    :pointmax 695
+    :fsize 725
+    :lastmodtime '(21157 36276)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_LZW_H_")
+          ("MIN_COMPRESS_RATIO" . ((number "0.9F" 225 . 229)))
+          ("BUFFER_SIZE" . 
+              ((number "1" 251 . 252) (punctuation "<" 252 . 253) (punctuation "<" 253 . 254) (number "12" 254 . 256)))
+          ("MAX_DIC_SIZE" . 
+              ((number "1" 138 . 139) (punctuation "<" 139 . 140) (punctuation "<" 140 . 141) (semantic-list "(MAX_BIT_SIZE)" 141 . 155)))
+          ("MIN_DIC_SIZE" . 
+              ((number "1" 177 . 178) (punctuation "<" 178 . 179) (punctuation "<" 179 . 180) (number "8" 180 . 181)))
+          ("MAX_BIT_SIZE" . 
+              ((number "1" 112 . 113) (punctuation "<" 113 . 114) (punctuation "<" 114 . 115) (number "4" 115 . 116)))
+          )
+
+    )
+   (semanticdb-table "lzw.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("lzw.h" include nil nil [1 17])
+            ("dic" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("Dict" type (:type "class") nil nil))
+                nil [18 48])
+            ("getDirectory" function
+               (:pointer 1
+                :type ("Dict" type (:type "class") nil nil))
+                nil [49 89])
+            ("setDirectory" function
+               (:arguments 
+                  ( ("dic" variable
+                       (:pointer 1
+                        :type ("Dict" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [108 119]))                  
+                :type "void")
+                nil [90 176])
+            ("encode" function
+               (:arguments 
+                  ( ("in" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [188 198])
+                    ("out" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [198 217]))                  
+                :type "int")
+                nil [177 455]))          
+    :file "lzw.c"
+    :pointmax 434
+    :fsize 455
+    :lastmodtime '(21157 37647)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!mzy!iie!gingko!codec!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

@@ -1,0 +1,366 @@
+;; Object iie/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "iie/"
+  :tables (list 
+   (semanticdb-table "test-snappy.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("snappy-c.h" include (:system-flag t) nil [60 81])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [91 100])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [101 114]))                  
+                :type "int")
+                nil [82 1356]))          
+    :file "test-snappy.c"
+    :pointmax 1371
+    :fsize 1468
+    :lastmodtime '(21179 61512)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "snappy-demo.html"
+    :major-mode 'html-mode
+    :tags nil
+    :file "snappy-demo.html"
+    :pointmax 1
+    :fsize 35758
+    :lastmodtime '(21179 18727)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test-snappy2.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("string.h" include (:system-flag t) nil [1 20])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [31 40])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [41 54]))                  
+                :type "int")
+                nil [22 72]))          
+    :file "test-snappy2.c"
+    :pointmax 73
+    :fsize 72
+    :lastmodtime '(21177 32268)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "testSnappy.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("TESTSNAPPY_H" variable (:constant-flag t) nil [30 42])
+            ("stdlib.h" include (:system-flag t) nil [43 62])
+            ("stdio.h" include (:system-flag t) nil [63 81])
+            ("errno.h" include (:system-flag t) nil [82 100])
+            ("dlfcn.h" include (:system-flag t) nil [101 119])
+            ("string.h" include (:system-flag t) nil [120 139])
+            ("snappy_status" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("SNAPPY_OK" variable
+                             (:constant-flag t
+                              :default-value (185 186)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [175 186])
+                          ("SNAPPY_INVALID_INPUT" variable
+                             (:constant-flag t
+                              :default-value (217 218)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [196 218])
+                          ("SNAPPY_BUFFER_TOO_SMALL" variable
+                             (:constant-flag t
+                              :default-value (252 253)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [228 253]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [153 269])
+            ("COMPRESS" variable (:constant-flag t) nil [298 306])
+            ("COMPRESS_LENGTH" variable (:constant-flag t) nil [349 364])
+            ("UNCOMPRESS" variable (:constant-flag t) nil [413 423])
+            ("UNCOMPRESSED_LENGTH" variable (:constant-flag t) nil [466 485])
+            ("VALID_COMPRESSED_BUF" variable (:constant-flag t) nil [528 548])
+            ("Snappy" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("compressedLength" variable
+                             (:functionpointer-flag t
+                              :type ("size_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [627 669])
+                          ("uncompressedLength" variable
+                             (:functionpointer-flag t
+                              :type ("snappy_status" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [674 814])
+                          ("compress" variable
+                             (:functionpointer-flag t
+                              :type ("snappy_status" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [819 980])
+                          ("uncompress" variable
+                             (:functionpointer-flag t
+                              :type ("snappy_status" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [985 1148])
+                          ("validCompressedBuf" variable
+                             (:functionpointer-flag t
+                              :type ("snappy_status" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [1153 1262]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [607 1271])
+            ("initSnappy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("handler" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1309 1324]))                  
+                :type ("Snappy" type (:type "class") nil nil))
+                nil [1291 1325]))          
+    :file "testSnappy.h"
+    :pointmax 1333
+    :fsize 1342
+    :lastmodtime '(21179 43368)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("UNCOMPRESSED_LENGTH" . ((string "\"snappy_uncompressed_length\"" 491 . 519)))
+          ("TESTSNAPPY_H")
+          ("UNCOMPRESS" . ((string "\"snappy_uncompress\"" 438 . 457)))
+          ("VALID_COMPRESSED_BUF" . ((string "\"snappy_validate_compressed_buffer\"" 553 . 588)))
+          ("COMPRESS_LENGTH" . ((string "\"snappy_max_compressed_length\"" 374 . 404)))
+          ("COMPRESS" . ((string "\"snappy_compress\"" 323 . 340)))
+          )
+
+    )
+   (semanticdb-table "testSnappy.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("testSnappy.h" include nil nil [1 24])
+            ("reject" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [47 60]))                  
+                :type "void")
+                nil [26 61])
+            ("compress" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("Snappy" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [83 90])
+                    ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [90 97])
+                    ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [97 104]))                  
+                :type "void")
+                nil [62 105])
+            ("uncompress" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("Snappy" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [129 136])
+                    ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [136 143])
+                    ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [143 150]))                  
+                :type "void")
+                nil [106 151])
+            ("getFileSize" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [178 185]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [152 186])
+            ("error" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [205 212]))                  
+                :type "void")
+                nil [187 213])
+            ("usage" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type "void")
+                nil [214 234])
+            ("Fopen" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [255 268])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [268 281]))                  
+                :type ("FILE" type (:type "class") nil nil))
+                nil [235 282])
+            ("libPath" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [284 344])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [356 365])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [366 379]))                  
+                :type "int")
+                nil [347 846])
+            ("compress" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable (:type ("Snappy" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [868 877])
+                    ("in" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [877 887])
+                    ("out" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [888 899]))                  
+                :type "void")
+                nil [847 1374])
+            ("uncompress" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable (:type ("Snappy" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1398 1407])
+                    ("in" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1407 1417])
+                    ("out" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1417 1428]))                  
+                :type "void")
+                nil [1375 2006])
+            ("getFileSize" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("fp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2034 2043]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [2008 2139])
+            ("reject" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2162 2180]))                  
+                :type "void")
+                nil [2141 2308])
+            ("reflect" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("handler" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2331 2346])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2346 2358]))                  
+                :type "void")
+                nil [2309 2472])
+            ("initSnappy" function
+               (:arguments 
+                  ( ("handler" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2491 2506]))                  
+                :type ("Snappy" type (:type "class") nil nil))
+                nil [2473 2820])
+            ("usage" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [2821 3256])
+            ("error" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3275 3286]))                  
+                :type "void")
+                nil [3257 3355])
+            ("Fopen" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3377 3396])
+                    ("mode" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3396 3414]))                  
+                :type ("FILE" type (:type "class") nil nil))
+                nil [3357 3528]))          
+    :file "testSnappy.c"
+    :pointmax 3529
+    :fsize 3528
+    :lastmodtime '(21179 47141)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "snappy-sample.html"
+    :major-mode 'html-mode
+    :tags nil
+    :file "snappy-sample.html"
+    :pointmax 1
+    :fsize 11245
+    :lastmodtime '(21179 62176)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!soft!iie!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )
