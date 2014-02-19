@@ -33,12 +33,12 @@
 
 (set-default 'ac-sources
              '(ac-source-imenu
-               ac-source-dictionary
+               ;;ac-source-dictionary
                ac-source-yasnippet
                ac-source-semantic
-               ac-source-words-in-buffer
+               ;;ac-source-words-in-buffer
                ac-source-gtags
-               ;;ac-source-words-in-same-mode-buffers
+               ac-source-words-in-same-mode-buffers
                ;;ac-source-words-in-all-buffer
                ))
 
@@ -69,6 +69,7 @@
                           (cons "->" '(ac-source-semantic)))
              (c-set-style "java")
              (c-toggle-auto-hungry-state)
+             (setq global-ede-mode t)
              ))  
 (setq ac-menu-height 20)
 
