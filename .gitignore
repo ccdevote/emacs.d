@@ -1,3 +1,4 @@
+srecode-map.el
 /url/cache
 /.emacs.desktop
 /auto-save-list
@@ -28,3 +29,4 @@ site-lisp/package/
 /.bookmarks.el
 \#*
 semanticdb/*
+
