@@ -1,7 +1,12 @@
+
 ;;; This file bootstraps the configuration, which is divided into
 ;;; a number of other files.
 
-(add-to-list 'load-path user-emacs-directory)
+(let ((minver 23))
+  (unless (>= emacs-major-version minver)
+    (error "Your Emacs is too old -- this config requires v%s or higher" minver)))
+
+(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 (require 'init-benchmarking) ;; Measure startup time
 
 (defconst *spell-check-support-enabled* nil) ;; Enable with t if you prefer
@@ -31,7 +36,6 @@
 (require 'init-themes)
 (require 'init-osx-keys)
 (require 'init-gui-frames)
-(require 'init-maxframe)
 (require 'init-proxies)
 (require 'init-dired)
 (require 'init-isearch)
@@ -81,15 +85,21 @@
 
 (require 'init-marmalade)
 (require 'init-misc)
+;;<<<<<<< HEAD
 ;; my config
-(require 'init-yasnippet)
-(require 'init-ecb)
-(require 'init-semantic)
-(require 'init-info)
-(require 'init-favourite)
-(require 'init-wb-line-number)
-(require 'init-malabar )
-(require 'init-w3)
+;;(require 'init-yasnippet)
+;;(require 'init-ecb)
+;;(require 'init-semantic)
+;;(require 'init-info)
+;;(require 'init-favourite)
+;;(require 'init-wb-line-number)
+;;(require 'init-malabar )
+;;(require 'init-w3)
+;;=======
+
+(require 'init-dash)
+(require 'init-ledger)
+;;>>>>>>> purcel/master
 ;; Extra packages which don't require any configuration
 (require-package 'gnuplot)
 (require-package 'lua-mode)
@@ -118,6 +128,8 @@
 ;;----------------------------------------------------------------------------
 ;; Allow users to provide an optional "init-local" containing personal settings
 ;;----------------------------------------------------------------------------
+(when (file-exists-p (expand-file-name "init-local.el" user-emacs-directory))
+  (error "Please move init-local.el to ~/.emacs.d/lisp"))
 (require 'init-local nil t)
 
 
@@ -126,8 +138,10 @@
 ;;----------------------------------------------------------------------------
 (require 'init-locales)
 
-(message "init completed in %.2fms"
-         (sanityinc/time-subtract-millis (current-time) before-init-time))
+(add-hook 'after-init-hook
+          (lambda ()
+            (message "init completed in %.2fms"
+                     (sanityinc/time-subtract-millis after-init-time before-init-time))))
 
 
 (provide 'init)

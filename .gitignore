@@ -29,4 +29,5 @@ site-lisp/package/
 /.bookmarks.el
 \#*
 semanticdb/*
-
+/history
+/helm-adaptive-history
