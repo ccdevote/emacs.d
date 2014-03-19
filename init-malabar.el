@@ -24,10 +24,13 @@
 
 ;;; Code:
 (require 'malabar-mode)
-(setq malabar-groovy-lib-dir "/home/soft/document/emacs/malabar/lib")
+(setq malabar-groovy-lib-dir "~/lib")
 (add-to-list 'auto-mode-alist '("\\.java\\'" . malabar-mode))
+
 ;; complile on save
-(add-hook 'malabar-mode-hook
-          (lambda () 'after-save-hook 'malabar-compile-file-silently nil t))
+;; (add-hook 'malabar-mode-hook
+;;                (lambda ()
+;;                         (add-hook 'after-save-hook 'malabar-compile-file-silently
+;;                                                     nil t)))
 (provide 'init-malabar)
 ;;; init-malabar.el ends here
