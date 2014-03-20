@@ -90,13 +90,13 @@
 (require 'init-misc)
 ;;<<<<<<< HEAD
 ;; my config
-;;(require 'init-yasnippet)
+(require 'init-yasnippet)
 ;;(require 'init-ecb)
 ;;(require 'init-semantic)
-;;(require 'init-info)
+(require 'init-info)
 ;;(require 'init-favourite)
-;;(require 'init-wb-line-number)
-;;(require 'init-malabar )
+(require 'init-wb-line-number)
+(require 'init-malabar )
 ;;(require 'init-w3)
 ;;=======
 
