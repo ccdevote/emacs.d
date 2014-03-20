@@ -1,16 +1,17 @@
 (when (< emacs-major-version 24)
-  (require-package 'org)
-  (require-package 'org-jekyll))
+  (require-package 'org))
+  
 (require-package 'org-fstree)
 (when *is-a-mac*
   (require-package 'org-mac-link)
   (require-package 'org-mac-iCal))
-
+(add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 
 (define-key global-map (kbd "C-c l") 'org-store-link)
 (define-key global-map (kbd "C-c a") 'org-agenda)
 (define-key global-map (kbd "C-c c") 'org-capture)
 (define-key global-map (kbd "C-c b") 'org-iswitchb)
+(require-package 'org-jekyll)
 (setq org-jekyll/jekyll-project-root "/home/soft/document/blog/")
 (setq org-jekyll/org-mode-project-root "/home/soft/document/blog/org")
 (setq org-publish-project-alist

@@ -25,7 +25,7 @@
 ;; Load configs for specific features and modes
 ;;----------------------------------------------------------------------------
 
-(require-package 'wgrep)
+;;(package 'wgrep)
 (require-package 'project-local-variables)
 (require-package 'diminish)
 (require-package 'scratch)
@@ -52,11 +52,13 @@
 (require 'init-fonts)
 (require 'init-mmm)
 
-(require 'init-editing-utils)
+;;con't resolve the hostname
+;;(require 'init-editing-utils)
 
 (require 'init-darcs)
 ;;(require 'init-git)
-(require  'init-git-emacs)
+;;can't load init-git-emacs'
+;;(require  'init-git-emacs)
 (require 'init-crontab)
 (require 'init-textile)
 (require 'init-markdown)
@@ -74,7 +76,8 @@
 ;;(require 'init-rails)
 (require 'init-sql)
 
-(require 'init-paredit)
+;; init-paredit load error
+;;(require 'init-paredit)
 ;;(require 'init-lisp)
 (require 'init-slime)
 (require 'init-clojure)
