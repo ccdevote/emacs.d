@@ -1,0 +1,7 @@
+# name: Sequence Diagram
+# key: sequence
+# --
+#+BEGIN_SRC plantuml :file ${1:path} :cmdline -charset UTF-8
+title ${2:title}
+$0
+#+END_SRC

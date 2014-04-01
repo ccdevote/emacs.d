@@ -1,0 +1,8 @@
+# name: add image in org-mode
+# key: image
+# --
+
+#+CAPTION:${0:caption}
+#+NAME:${1:internal name}
+#+ATTR_HTML: :class ${2:class} :alt ${3:alt} :title ${4:title} :align ${5:align}
+file:${6:path}

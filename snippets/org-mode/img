@@ -1,0 +1,14 @@
+# name: center 居中区块
+# key : center
+# --
+#+BEGIN_CENTER
+$0
+#+END_CENTER
+# name: img 插入图片
+# key: img
+# --
+
+#+CAPTION:
+#+NAME:${1:internal name}
+#+ALTER_HTML: :class ${2:class} :alt ${3:alt} :title ${4:title} :align ${5:align}
+file:$0

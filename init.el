@@ -56,7 +56,7 @@
 ;;(require 'init-editing-utils)
 
 (require 'init-darcs)
-;;(require 'init-git)
+(require 'init-git)
 ;;can't load init-git-emacs'
 ;;(require  'init-git-emacs)
 (require 'init-crontab)
@@ -88,22 +88,17 @@
 
 (require 'init-marmalade)
 (require 'init-misc)
-;;<<<<<<< HEAD
 ;; my config
 (require 'init-yasnippet)
-;;(require 'init-ecb)
-;;(require 'init-semantic)
+(require 'init-plantuml)
+(require 'init-ecb)
+(require 'init-semantic)
 (require 'init-info)
-;;(require 'init-favourite)
+(require 'init-favourite)
 (require 'init-wb-line-number)
 (require 'init-malabar )
-;;(require 'init-w3)
-;;=======
-
 (require 'init-dash)
 (require 'init-ledger)
-;;>>>>>>> purcel/master
-;; Extra packages which don't require any configuration
 (require-package 'gnuplot)
 (require-package 'lua-mode)
 (require-package 'htmlize)
