@@ -3,7 +3,7 @@
 
 (require-package 'color-theme-sanityinc-solarized)
 (require-package 'color-theme-sanityinc-tomorrow)
-
+;; (require 'color-theme-github)		
 ;;------------------------------------------------------------------------------
 ;; Old-style color theming support (via color-theme.el)
 ;;------------------------------------------------------------------------------
@@ -71,5 +71,14 @@ ignored: use `custom-enabled-themes' instead."
   (interactive)
   (color-theme-sanityinc-solarized-dark))
 
+(defun black ()
+  "Activate a black color theme"
+  (interactive)
+  (color-theme-sanityinc-tomorrow-night))
+
+(defun git-theme ()
+  "Activate a black color theme"
+  (interactive)
+  (color-theme-github))
 
 (provide 'init-themes)

@@ -1,4 +1,5 @@
 (require-package 'magit)
+(require-package 'git)
 (require-package 'git-blame)
 (require-package 'git-commit-mode)
 (require-package 'git-rebase-mode)

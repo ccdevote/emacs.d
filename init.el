@@ -97,6 +97,9 @@
 (require 'init-favourite)
 (require 'init-wb-line-number)
 (require 'init-malabar )
+;(require 'init-sendmail)
+(require 'init-gnus )
+
 (require 'init-dash)
 (require 'init-ledger)
 (require-package 'gnuplot)

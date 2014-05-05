@@ -14,27 +14,7 @@
 (require-package 'org-jekyll)
 (setq org-jekyll/jekyll-project-root "/home/soft/document/blog/")
 (setq org-jekyll/org-mode-project-root "/home/soft/document/blog/org")
-(setq org-publish-project-alist
-      '(
-        ("mblog-org"
-         :base-directory "/home/soft/document/blog/org"
-         :base-extension "org"
-         :publishing-directory "/home/soft/document/blog"
-         :recursive t
-         :publishing-function org-publish-org-to-html
-         :headline-levels 4
-         :html-extension "html"
-         :body-only t
-         )
-        ("mblog-static"
-         :base-directory "/home/soft/document/blog/org/resources"
-         :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf\\|php"
-         :publishing-directory "/home/soft/document/blog/resources"
-         :recursive t
-         :publishing-function org-publish-attachment
-         )
-        ("mblog":components("mblog-org" "mblog-static"))
-        ))
+(setq org-jekyll/org-export-with-toc t)
 
 ;; Various preferences
 (setq org-log-done t
@@ -48,7 +28,9 @@
       org-fast-tag-selection-single-key 'expert
       org-export-kill-product-buffer-when-displayed t
       org-tags-column 80)
-
+;; support Latex to export PDF
+(setq org-latex-pdf-process '("xelatex -interaction nonstopmode %f"
+                              "xelatex -interaction nonstopmode %f"))
 
 ; Refile targets include this file and any file contributing to the agenda - up to 5 levels deep
 (setq org-refile-targets (quote ((nil :maxlevel . 5) (org-agenda-files :maxlevel . 5))))
@@ -125,14 +107,6 @@
   (when *is-a-mac*
     (autoload 'omlg-grab-link "org-mac-link")
     (define-key org-mode-map (kbd "C-c g") 'omlg-grab-link)))
-;;(setq org-jekyll/jekyll-project-root "/home/soft/document/blog")
-;;(setq org-jekyll/org-mode-project-root "/home/soft/document/blog/org")
-;;(setq org-publish-project-alist '(
-;;                                   "blog"
-;;                                     :body t
-;;                                     :base-directory "/hoem/soft/document/blog/org"
-;;                                     :publish-directory "/home/soft/document/blog/_posts")
-;; )
 
 
 (provide 'init-org)

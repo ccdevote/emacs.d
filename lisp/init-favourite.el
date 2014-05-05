@@ -1,8 +1,11 @@
 ;; move the mouse when mouse on
-(mouse-avoidance-mode 'animate)
+;;(mouse-avoidance-mode 'animate)
 ;; show file name on the title bar
 (setq frame-title-format "emacs@%b")
 ;; emacs can open the image directly
 (auto-image-file-mode)
-
+;; show time
+(display-time)
+(linum-mode t)
 (provide 'init-favourite)
+

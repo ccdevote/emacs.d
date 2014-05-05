@@ -35,6 +35,7 @@
          :publishing-function org-publish-org-to-html
          :headline-levels 4
          :html-extension "html"
+	 :with-emphasize t
          :body-only t
          )
         ("mblog-static"

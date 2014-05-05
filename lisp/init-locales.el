@@ -18,5 +18,8 @@
   (unless (eq system-type 'windows-nt)
    (set-selection-coding-system 'utf-8))
   (prefer-coding-system 'utf-8))
-
+;;不生成#F#文件
+(setq auto-save-default nil)
+;;不生成临时文件
+(setq-default make-backup-files nil)
 (provide 'init-locales)
