@@ -12,8 +12,8 @@
 (define-key global-map (kbd "C-c c") 'org-capture)
 (define-key global-map (kbd "C-c b") 'org-iswitchb)
 (require-package 'org-jekyll)
-(setq org-jekyll/jekyll-project-root "/home/soft/document/blog/")
-(setq org-jekyll/org-mode-project-root "/home/soft/document/blog/org")
+(setq org-jekyll/jekyll-project-root "/home/mzy/blog/")
+(setq org-jekyll/org-mode-project-root "/home/mzy/blog/org")
 (setq org-jekyll/org-export-with-toc t)
 
 ;; Various preferences

@@ -95,8 +95,8 @@
 (require 'init-semantic)
 (require 'init-info)
 (require 'init-favourite)
-(require 'init-wb-line-number)
-(require 'init-malabar )
+;;(require 'init-wb-line-number)
+;;(require 'init-malabar )
 ;(require 'init-sendmail)
 (require 'init-gnus )
 
